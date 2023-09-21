@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!-- Section: Link images -->
+<section id="a-images">
+    <div class="a-container py-2">
+        <a href="{% url 'basic_app:daily' %}"><img src="{% static 'img/Mc 1.jpg' %}" alt=""></a>
+        <a class="optional" href="{% url 'basic_app:collections' %}"><img src="{% static 'img/Mc 2.jpg' %}" alt=""></a>
+        <a class="optional" href="{% url 'basic_app:beginners' %}" target="_blank"><img src="{% static 'img/Mc 3.jpg' %}" alt=""></a>
+        <a href="{% url 'basic_app:glossary' %}"><img src="{% static 'img/Mc 4.jpg' %}" alt=""></a>
+        <a href="{% url 'basic_app:about' %}"><img src="{% static 'img/Mc 5.jpg' %}" alt=""></a>
+        <a href="{% url 'basic_app:ebook' %}"> <img src="{% static 'img/Mc 6.jpg' %}" alt=""></a>
+    </div>
+</section>
+
+
+<!-- Section: Write -->
+<section id="w-daily">
+<div class="container">
+    <h3>About B Y F &nbsp; Crochet Daily</h3>
+    <p> The Daily Channel is a platform to get all our amazing informations such as: news, entertainment, as well as design Updates, fashion styles and beauty accessories.
+        The daily channel is for true Crochet-lovers and it ensures that you are always updated on new accessories. This will ensure that you can access the best patterns and expert tutorials whenever you need them. 
+    </p>
+    <p>
+        If you're hooked on crocheting, you deserve to recieve news updates about what you love. 
+        Take a look at the incredible benefits you'll recieve by joining our daily channel:
+        <ul>
+            <li><span>Fashion News</span>- This provides everyday news on fashion and all new styles available. By joining our daily channel you have an added advantage to benefit from the product you need at a scarce period and yet a lower price.  </li>
+            <li><span>New Design Styles</span>- Everyday provides new designs and You don't want to miss out on these. Our daily channel makes sure to provide access to new designs in a relatively easy manner.</li>
+            <li><span>Beauty Accessories</span>- BYF crochet has one primary goal and that is to bring out beauty. We provide new Beauty accessories info on our daily channel. These beauty accessories indeed leads to beauty and makes you beautiful. You don't want to miss out!</li>
+        </ul>
+    </p>
+    <a class="btn-primary" href="{% url 'basic_app:daily' %}">Daily Channel</a>
+</div>
+</section>
+
+
+<!-- Section: Body image -->
+<section id="body-img">
+<div class="container">
+    <img src="{% static 'img/w1.jpg' %}" alt="">
+    <img class="hidden" src="{% static 'img/w2.jpg' %}" alt="">
+</div>
+</section>
+
+
+<!-- Section: Write 2 -->
+<section id="w-e-book">
+<div class="container">
+    <h3>Our e-book Piece</h3>
+    <p>We all love learning new things and gaining new experiences in life. Learning how to crochet has displayed itself to be difficult for people who want to learn. If you're in this category don't worry we have the right materials for you.</p>
+    <p>Our e-book teaches Crocheting from the basic level to the advanced and it is well documented with easy-to-understand language concepts. 
+        The lessons follows a detailed algorithm which we believe will help you learn efficiently. To wrap it up, our e-books are totally free. They cost <span>nothing</span>, all you have to do is sign up with us. 
+    </p>
+    <p>
+        Click the link below to get your e-book 
+    </p> 
+    <a class="btn-primary" href="{% url 'basic_app:ebook' %}">e-book</a>
+</div>
+</section>
+
+
+<!-- section: About collections -->
+<section id="about-collections">
+<div class="container collection-container">
+<div>
+<h3>About B Y F &nbsp;Collections</h3>
+<p>BYF collections is a store room that holds the best and most beautiful crochet collections. It is a great way to see what BYF Crochet is all about. In BYF Crochet collections, we provide the best materials and the best deals for you.</p>
+<p>Looking for that beautiful Crochet Sweater? Don't worry, our beautiful crochet Collections has you covered. You can always check-in to see some beautiful collections that you might like. We make sure to bring out the beauty you deserve as this is our primary goal.</p>
+<p>News and updates will be available in our daily channel, always check-in so you don't miss out on our exquisite offers. </p>
+</div>
+<img src="{% static 'img/w3.jpg' %}" alt="">
+</div>
+<a href="collections.html" class="btn-primary">Collections</a>
+</section>
+
+
+<!-- Section: everyone -->
+<section id="everyone">
+<div class="container">
+    <h3>Everyone Can Crochet</h3>
+</div>
+</section>
+
+
+<!-- section: About Courses -->
+<section id="about-courses">
+<div class="container courses-container">
+    <h3>About Courses</h3><br>
+    <h5>Coming Soon!</h5>
+    <p>Learning how to Crochet can be difficult, especially if you're not taught properly. We offer one of the best learning programs and we believe everyone can crochet.                  
+    </p>
+    <p>We have a curriculum we follow and we provide the best possible resources to impact basic and advanced crocheting knowledge to our students. The classes are arranged so that you begin from basic crochet designs to advanced crochet designs.</p>                <p>Our learning procedure presents different crocheting levels which includes:
+        <ul>
+            <li><span>Beginners -</span> This is our basic and foundation classes on Crocheting.</li>                        
+            <li><span>Advanced -</span> This is our advanced crocheting classes where we teach advanced crocheting concepts and make them easy to learn. </li>
+            <li><span>Professional -</span> This class includes creating design projects and fashion styles. The winner gets an award at the end of the course.</li>
+            <li><span>Glossary -</span> This is our crocheting dictionary. You can check out for basic crocheting concepts on this page. </li>      
+        </ul>
+    </p>
+</div>
+<a class="btn-primary" href="{% url 'basic_app:beginners' %}">Courses</a>
+</section>
+
+
+<!-- section: New York -->
+<section id="new-york">
+<div class="container">
+    <p>...."crocheting can lower heart rate and blood pressure and reduce harmful blood levels of the stress hormones cortisol."</p>
+    <h6>- NEW YORK TIMES</h6>
+</div>
+</section>
+
+<!-- footer -->
+<footer id="main-footer">
+<div class="container footer-container">
+    <div class="footer-social list">
+        <h4>JOIN OUR COMMUNITY</h4>
+        <p>You can become a part of our community. Check it out!</p><br>
+        <a href="https://instagram.com/tilleycrochet21?igshid=OTk0YzhjMDVlZA==" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.youtube.com/@BYFcrochet" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100090926940412&mibextid=avESrC" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.tiktok.com/@astreria21?_r=1&_d=e48gm78d4i628f&sec_uid=MS4wLjABAAAAsJ70hK7HxcniR9PN9k1bxJRdah7lcqNG8EMxot6oUXn52Ly0mHWBeQO1oHdNgCVi&share_author_id=7071268593233265670&sharer_language=en&source=h5_m&u_code=e0fb6b5ig7bgkm" target="_blank"> <i class="fa-brands fa-tiktok fa-2x"></i></a>
+    </div>
+
+    <div class="list">
+        <h4>RESOURCES</h4>
+        <li><a href="{% url 'basic_app:glossary' %}">GLOSSARY</a></li><br>
+        <li><a href="{% url 'basic_app:privacy' %}">PRIVACY POLICY</a></li><br>
+        <li><a href="{% url 'basic_app:about' %}">ABOUT US</a></li><br>
+        <li><a href="{% url 'basic_app:conditions' %}">TERMS & CONDITIONS</a></li>                   
+    </div>
+
+    <div class="list">
+        <h4>CONTACT US</h4>
+        <p>+234 9046727539</p>
+    </div>
+    
+</div>
+<div class="copyright">
+    <p>copyright &copy; 2023 BYF Crochet</p>
+</div>
+</footer>
+
+{% endblock %}

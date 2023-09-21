@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="about-header">
+        <h2>About Us</h2>
+    </div>
+
+    <div class="about-body">
+        <h2>Our Mission Statement</h2>
+        <br>
+        <p>"To bring good fashion to the world, making it comfortable and easily accessible to all, as well as providing products and social engagements that promote the joy of crocheting."</p>
+        <br>
+        <img src="{% static 'img/w1.jpg' %}" alt="">
+        <h3><span>BYF Today</span></h3>
+        <p>Our mission at BYF Crochet Company is to bring fashion to the world, making it comfortable and easily accessible to all, as well as providing products and social engagements that promote the joy of corcheting</p>
+        <p>We are a Nigerian based company and our products can be ordered directly from our stores or online for shipping. We offer innovative products and best in class leading edge social engagement in the crocheting community and we are relentless in creatively pursuing the next great opportunity. Our team works collaboratively to explore and generate new and exciting ideas that keep our brand fresh and our category invigorated, as we fulfill our purpose to Create a More Colorful, Connected, Comforting, and Caring World!</p>
+        <br>
+        <h3><span>BYF Brand Community</span></h3>
+        <p>We invite you to join an active and supportive community by connecting with us on Facebook, Instagram, Youtube, Tiktok, and by reading our blog and also subscribing to our youtube channnel. You may contact us through any of these social media platforms if you need assistance, have questions or comments.</p>
+        <div class="last">
+            <p>You can count the fact that the next breakthrough in crochet will come from BYF Crochet</p>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer id="main-footer">
+    <div class="container footer-container">
+        <div class="footer-social list">
+            <h4>JOIN OUR COMMUNITY</h4>
+            <p>You can become a part of our community. Check it out!</p><br>
+            <a href="https://instagram.com/tilleycrochet21?igshid=OTk0YzhjMDVlZA==" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/@BYFcrochet" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100090926940412&mibextid=avESrC" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.tiktok.com/@astreria21?_r=1&_d=e48gm78d4i628f&sec_uid=MS4wLjABAAAAsJ70hK7HxcniR9PN9k1bxJRdah7lcqNG8EMxot6oUXn52Ly0mHWBeQO1oHdNgCVi&share_author_id=7071268593233265670&sharer_language=en&source=h5_m&u_code=e0fb6b5ig7bgkm" target="_blank"> <i class="fa-brands fa-tiktok fa-2x"></i></a>
+        </div>
+
+        <div class="list">
+            <h4>RESOURCES</h4>
+            <li><a href="{% url 'basic_app:glossary' %}">GLOSSARY</a></li><br>
+            <li><a href="{% url 'basic_app:privacy' %}">PRIVACY POLICY</a></li><br>
+            <li><a href="{% url 'basic_app:conditions' %}">TERMS & CONDITIONS</a></li>                   
+        </div>
+
+        <div class="list">
+            <h4>CONTACT US</h4>
+            <p>+234 9046727539</p>
+            
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; 2023 BYF Crochet</p>
+    </div>
+    </footer>
+
+
+{% endblock %}

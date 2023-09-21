@@ -1,0 +1,470 @@
+#main-header .container {
+    max-width: 800px;
+    display: block;
+}
+
+#main-header .container .title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#main-header li {  
+    padding: 0.2rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+#main-header label {
+    display: initial;
+}
+
+#main-header .welcome a{
+    margin-left: 16.8rem;
+}
+
+#main-header .welcome-user {
+    margin-left: 24rem;
+
+}
+
+#main-header .login-user {
+    margin-right: 17rem;
+}
+
+#main-header h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #344a72;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Main-nav */
+#main-nav {
+    display: none;
+}    
+
+/* Section: Navbar Index Page */
+#phone-nav {
+    position: relative;
+    top: 100%; left: 0; right: 0;
+    width: 100%;
+    background-color: rgb(139, 138, 137);
+}
+
+#main-header .container #phone-nav ul li {
+    display: none;
+}
+
+#phone-nav a {
+    color: #eeeaea;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+#phone-nav ul li {
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    border-bottom: dotted 1px black;
+}
+
+#phone-nav ul li:first-child {
+    padding: 1.5rem;
+    
+}
+
+#phone-nav ul li ul {
+    display: none;
+}
+
+#phone-nav ul li:hover ul {
+    display: block;
+    position: relative;
+    left: 40%;
+    width: 150px;
+    border-bottom: dotted 1px black;
+}
+
+#phone-nav ul li:hover ul:first-child {
+    margin-top: 1.5rem;
+}
+
+#phone-nav ul li:hover ul li a {
+    color: #fff;
+}
+
+
+#menu-bar:checked ~ #phone-nav ul li {
+    display: block;
+}
+
+
+
+/* Section: About Page */
+.about-header {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.about-body h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.about-body img {
+    width: 750px;
+    height: 300px;
+    margin-bottom: 3rem ;
+    margin-left: 0;
+}
+
+/* Section: Privacy Page  */
+.privacy-header {
+    margin: 0.3rem 0 1.2rem 0;
+}
+
+/* Section: Terms and conditions */
+.terms-header {
+    margin: 0.4rem 0 1.2rem 0;
+}
+
+/* Section: Glossary */
+.glossary-header {
+    margin: 0.4rem 0 1.2rem 0;
+}
+
+
+
+/* Header Link Images Index Page */
+#a-images .a-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.3rem;
+    max-width: 750px;
+}
+
+#a-images .optional {
+    display: none;
+}
+
+
+
+/* Daily Index Page */
+#w-daily a {
+    margin: 0 10rem 2rem 19rem;
+}
+
+/* Body Image Index Page */
+#body-img .container {
+    max-width: 800px;
+}
+
+#body-img img {
+    width: 335px;
+    height: 250px;
+    margin: 0.1rem;
+}
+
+/* About-Collection Index Page */
+#about-collections h3 {
+    margin: 2rem 0 1rem 0;
+}
+
+#about-collections .collection-container {
+    display: block;
+}
+
+#about-collections img {
+    width: 780px;
+    max-width: 715px;
+    height: 520px;
+    margin: 2rem 0 1.5rem 0;
+}
+
+#about-collections a {
+    margin: 0 15rem 2rem 2rem;
+}
+
+/* About-Courses */
+#about-courses a {
+    margin: 1rem 0 3rem 22rem;
+}
+
+#main-footer .footer-social a {
+    margin: 0.1rem;
+}
+
+#main-footer .footer-social .fa-instagram {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+
+
+/* SmartPhones */
+@media(max-width:500px) {
+    #main-header .container {
+        max-width: 600px;
+        display: block;
+    }
+
+    #main-header .container .title {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    #main-header li {  
+        padding: 0.2rem;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #main-header label {
+        display: initial;
+    }
+
+    #main-header .welcome a{
+        margin-left: 4rem;
+        color: #344a72;
+    }
+    
+    #main-header .welcome-user {
+        margin-left: 0;
+    }
+    
+    #main-header .login-user {
+        margin-right: 4rem;
+    }
+
+    #main-header h3 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #344a72;
+        margin-bottom: 1rem;
+    }
+    
+    /* Section: a-images */
+    #a-images .a-container {
+    display: grid;
+    max-width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.1rem;
+    }
+
+    #a-images img {
+    height: 160px;
+    width: 190px;
+    transition: all 0.3s ease-in;
+    }
+
+    /* Main-nav */
+    #main-nav {
+        display: none;
+    }    
+
+    /* Section: w-daily */
+    #w-daily .container {
+        max-width: 400px;
+    }
+
+    #w-daily h3 {
+        font-size: 2rem;
+        font-family: 'Tangerine', cursive;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        color: steelblue;
+    }
+    
+    #w-daily a {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin: 0 10rem 2rem 0rem;
+        font-size: 0.6rem;
+    }
+
+    /* Section: body-img Index Page */
+    #body-img .hidden {
+        display: none;
+    }
+
+    #body-img img {
+        height: 420px;
+        width: 330px;
+    }
+
+    /* Section: e-book */
+    #w-e-book h3 {
+        margin: 2.5rem 1rem 1rem 1rem;
+    }
+
+    /* Section: about-collections */
+    #about-collections h3 {
+        font-size: 2rem;
+    }
+
+    #about-collections img{
+        display: none;
+    }
+
+    #about-collections a {
+        padding: 0.5rem;
+        margin: 0.5rem 0 4rem 3rem;
+        font-size: 0.6rem;
+    }
+
+    /* Section: Everyone Index Page */
+    #everyone .container h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Section: Courses Index Page */
+    #about-courses a {
+        padding: 0.6rem;
+        margin: 0.5rem 0 2rem 10rem;
+        font-size: 0.7rem;
+    }
+
+    /* Section: Footer */
+    #main-footer .container {
+        display: block;
+    }
+
+    .py-2 { padding: 0.2rem 0;}
+    
+
+    /* Section: Navbar Index Page */
+    #phone-nav {
+        position: relative;
+        top: 100%; left: 0; right: 0;
+        width: 100%;
+        background-color: rgb(139, 138, 137);
+    }
+
+    #main-header .container #phone-nav ul li {
+        display: none;
+    }
+
+    #phone-nav a {
+        color: #eeeaea;
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+    
+    #phone-nav ul li {
+        padding: 1rem;
+        color: white;
+        cursor: pointer;
+        border-bottom: dotted 1px black;
+    }
+
+    #phone-nav ul li:first-child {
+        padding: 1.5rem;
+        
+    }
+    
+    #phone-nav ul li ul {
+        display: none;
+    }
+
+    #phone-nav ul li:hover ul {
+        display: block;
+        position: relative;
+        left: 25%;
+        width: 150px;
+        border-bottom: dotted 1px black;
+    }
+
+    #phone-nav ul li:hover ul:first-child {
+        margin-top: 1.5rem;
+    }
+    
+    #phone-nav ul li:hover ul li a {
+        color: #fff;
+    }
+    
+
+    #menu-bar:checked ~ #phone-nav ul li {
+        display: block;
+    }
+
+    #main-header label {
+        margin-top: 2rem;
+    }
+
+    /* Login */
+    #log-in form {
+        width: 240px;
+    }
+
+    #log-in .container p {
+        font-size: 0.9rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        color: rgb(94, 91, 91);
+        margin-top: 2rem;
+    }
+
+    #log-in a {
+        font-size: 0.9rem;
+        color: rgb(94, 91, 91);
+    }
+
+    /* Section: About Page */
+    .about-header {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .about-body h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .about-body img {
+        width: 330px;
+        height: 250px;
+        margin-bottom: 3rem ;
+        margin-left: 0;
+    }
+
+    /* Section: Privacy Page  */
+    .privacy-header {
+        margin: 0.3rem 0 1.2rem 0;
+    }
+
+    /* Section: Terms and conditions */
+    .terms-header {
+        margin: 0.4rem 0 1.2rem 0;
+    }
+
+    /* Section: Glossary */
+    .glossary-header {
+        margin: 0.4rem 0 1.2rem 0;
+    }
+
+    /* Section: Collections Page */
+    /* Collections Page */
+    .collection-header {
+        margin: 0.4rem 0 1.2rem 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

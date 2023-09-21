@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="glossary-header">
+        <h2>Glossary</h2>
+    </div>
+
+    <div class="glossary-body">
+        <p>This page lists the abbreviations that are commonly used in our patterns. These terms help provide a basic understanding of crocheting terms!
+        <br>    
+        If you have a question about an abbreviation that is not answered here, please contact +234 9046727539 and let us know how we can help you.</p>
+        <br>
+        <h3>Crochet Abbreviations</h3>
+        <br>
+    </div>
+
+    <div class="glossary-list">
+        <ul>
+            <li><span>Amigurumi:</span> The art of crocheting small stuffed creatures or objects, often using single crochet stitches in continuous rounds.</li>
+            <li><span>Blocking:</span> The process of shaping and setting the final dimensions of a crochet project using water and pins or other tools.</li>
+            <li><span>Blocking Mat:</span> A surface on which crocheted pieces are pinned and blocked to shape and size.</li>
+            <li><span>Chain (ch):</span> The foundation of most crochet projects, created by pulling a loop through a previous loop, forming a chain-like series of loops.</li>
+            <li><span>Cluster:</span> A group of stitches worked into the same stitch or space, typically creating a textured or decorative element.</li>
+            <li><span>Color Change:</span> Transitioning from one yarn color to another within a project.</li>
+            <li><span>Double Crochet (dc):</span> A taller crochet stitch, often used in many crochet patterns.</li>
+            <li><span>Foundation Chain:</span> The initial row of chains used to start a crochet project.</li>
+            <li><span>Frogging:</span> The act of unraveling or ripping out stitches in a project to correct mistakes.</li>
+            <li><span>Gauge:</span> The number of stitches and rows per inch or centimeter in a crochet project, which determines the size and fit of the finished item.</li>
+            <li><span>Invisible Join:</span> A technique used to seamlessly finish off a round, making the join virtually invisible.</li>
+            <li><span>Magic Ring (or Magic Circle):</span>  A method for starting projects worked in the round, often used in amigurumi.</li>
+            <li><span>Pattern:</span> A set of instructions for creating a specific crochet project, including stitch sequences and shaping details.</li>
+            <li><span>Repeat:</span> Instructions in a pattern that are to be repeated a specified number of times.</li>
+            <li><span>Round:</span> A circular row of stitches, often used in projects like hats and amigurumi.</li>
+            <li><span>Row</span> A horizontal line of stitches worked from left to right (for right-handed crocheters).</li>
+            <li><span>Single Crochet (sc):</span> A basic crochet stitch that creates a tight, dense fabric.</li>
+            <li><span>Slip Stitch (sl st):</span> A simple stitch used to join rounds or rows and create a smooth edge.</li>
+            <li><span>Stitch (st):</span> A single unit of crochet, which can vary in height and appearance depending on the stitch used.</li>
+            <li><span>Tension:</span> The tightness or looseness with which a crocheter holds the yarn while working, which affects the size and appearance of stitches.</li>
+            <li><span>Treble Crochet (tr):</span> A very tall crochet stitch, commonly used in lacy and openwork projects.</li>
+            <li><span>Turning Chain:</span> A chain at the beginning of a row or round, which typically serves as the height of the next stitch.</li>
+            <li><span>WIP:</span> Abbreviation for "Work in Progress," referring to an unfinished crochet project.</li>
+            <li><span>Yarn Over (yo):</span> Wrapping the yarn around the hook before making a stitch, which creates new loops on the hook.</li>
+            <li><span>Yarn Weight:</span> A classification system for yarn thickness, which affects the drape and warmth of the finished project (e.g., fingering, bulky, worsted).</li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- footer -->
+<footer id="main-footer">
+    <div class="container footer-container">
+        <div class="footer-social list">
+            <h4>JOIN OUR COMMUNITY</h4>
+            <p>You can become a part of our community. Check it out!</p><br>
+            <a href="https://instagram.com/tilleycrochet21?igshid=OTk0YzhjMDVlZA==" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/@BYFcrochet" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100090926940412&mibextid=avESrC" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+            <a href="" target="_blank"> <i class="fa-brands fa-tiktok fa-2x"></i></a>
+        </div>
+
+        <div class="list">
+            <h4>RESOURCES</h4>
+            <li><a href="{% url 'basic_app:privacy' %}">PRIVACY POLICY</a></li><br>
+            <li><a href="{% url 'basic_app:about' %}">ABOUT US</a></li><br>
+            <li><a href="{% url 'basic_app:conditions' %}">TERMS & CONDITIONS</a></li>                   
+        </div>
+
+        <div class="list">
+            <h4>CONTACT US</h4>
+            <p>+234 9046727539</p>
+            
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; 2023 BYF Crochet</p>
+    </div>
+    </footer>
+{% endblock %}

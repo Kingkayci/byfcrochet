@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sofia+Sans+Extra+Condensed:ital,wght@1,200&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Register</title>
+</head>
+<body>
+	
+<!--Register--> 
+<section id="sign-up">
+	<div class="sign-up-container">
+		<h1>Create an Account</h1>        
+		<p>If you already have an account, <a href="{% url 'basic_app:login' %}">login</a> instead.</p>
+		<form method="POST">
+			{% csrf_token %}			
+			{{ uni_form }}                    
+			<input class="signup-btn" type="submit" value="Create my Account">
+			<h3>By Clicking To The Create my Account Button, You Agree To Our <a href="{% url 'basic_app:conditions' %}"> Terms And Conditions</a> </h3>
+		</form>
+	</div>
+</section>
+
+</body>
+</html>

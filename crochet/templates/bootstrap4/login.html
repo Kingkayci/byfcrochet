@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+	<title>Register</title>
+</head>
+<body>
+	
+<!--Register--> 
+<!-- Section: Log In -->
+<section id="log-in">
+    <div class="container">
+        <div class="log-in-container">
+            <h1>Login</h1>
+            <form method="POST">
+                {% csrf_token %}			
+                {{ login_form }}                    
+                <input class="login-btn" type="submit" value="Login">
+            </form>            
+            <p>Don't have an account? <a href="{% url 'basic_app:signup' %}">Create account</a>.</p><br>
+            <!-- <a href="{% url 'basic_app:reset_password' %}">Forgot password?</a> -->
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

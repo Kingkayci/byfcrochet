@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="advanced-header">
+        <h2>Welcome To BYF Crochet Advanced Learning Programme</h2>
+    </div>
+
+    <div class="advanced-body">
+        <p>BYF Crochet Company Inc. ("Company", "we", "us") offers one of the best learning experience as we teach students with the easiest leanring concepts and awesome materials.</p><br>
+        <p>Classes will start soon! You must be a student to be able to access our courses!</p>
+        <p>If you do not have an account, please <a href="{% url 'basic_app:signup' %}">Signup</a> here.</p>
+        <h3>Coming Soon!</h3>
+    </div>
+</div>
+
+
+<!-- footer -->
+<footer id="main-footer">
+    <div class="container footer-container">
+        <div class="footer-social list">
+            <h4>JOIN OUR COMMUNITY</h4>
+            <p>You can become a part of our community. Check it out!</p><br>
+            <a href="https://instagram.com/tilleycrochet21?igshid=OTk0YzhjMDVlZA==" target="_blank"> <i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/@BYFcrochet" target="_blank"> <i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100090926940412&mibextid=avESrC" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a>
+            <a href="" target="_blank"> <i class="fa-brands fa-tiktok fa-2x"></i></a>
+        </div>
+
+        <div class="list">
+            <h4>RESOURCES</h4>
+            <li><a href="{% url 'basic_app:glossary' %}">GLOSSARY</a></li><br>
+            <li><a href="{% url 'basic_app:privacy' %}">PRIVACY POLICY</a></li><br>
+            <li><a href="{% url 'basic_app:about' %}">ABOUT US</a></li><br>
+            <li><a href="{% url 'basic_app:conditions' %}">TERMS & CONDITIONS</a></li>                   
+        </div>
+
+        <div class="list">
+            <h4>CONTACT US</h4>
+            <p>+234 9046727539</p>
+            
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; 2023 BYF Crochet</p>
+    </div>
+    </footer>
+
+{% endblock %}
